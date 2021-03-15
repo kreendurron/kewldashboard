@@ -1,1 +1,158 @@
-umm
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="refresh" content="300">
+<style> 
+body {
+  background-image: url("https://cdn.wallpapersafari.com/36/42/T0Wet7.jpg");
+}
+</style>
+<style>
+  #map {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 45px;
+  }
+</style>
+<style>
+  #radar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-left: 45px;
+  }
+</style>
+<style>
+  #time {
+    position: fixed;
+    top: 19%;
+    left: 32%;
+    
+  }
+</style>
+<style>
+  #cast {
+    position: fixed;
+    width: 100%;
+    margin-top: 0px;
+    margin-left: -24px;
+  
+  }
+</style>
+<style>
+  #stock {
+    position: fixed;
+    width: 100%;
+    margin-top: 99px;
+    margin-left: 1250px; 
+  }
+</style>
+<style>
+  #news {
+    position: fixed;
+    width: 100%;
+    margin-top: 99px;
+    margin-left: 37px; 
+  }
+</style>
+</head>
+<body>
+
+<div id="time"><iframe src="https://freesecure.timeanddate.com/clock/i7pkya6r/n178/fs48/fcfff/tct/pct/ftb/tt0/tb4" frameborder="0" width="739" height="112" allowTransparency="true"></iframe>
+
+ </div>
+
+
+
+<div id="radar"><iframe width="912" height="604" src="https://embed.windy.com/embed2.html?lat=29.841&lon=-89.824&detailLat=30.269&detailLon=-89.729&width=912&height=604&zoom=8&level=surface&overlay=rain&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=true&metricWind=mph&metricTemp=%C2%B0F&radarRange=-1" frameborder="0"></iframe></div>
+
+<div id="map"><iframe src="https://embed.waze.com/iframe?zoom=10&lat=30.2577&lon=-90.0000&ct=livemap" width="912" height="600"></iframe></div>
+
+<div id="cast"><a class="weatherwidget-io" href="https://forecast7.com/en/30d28n89d78/slidell/?unit=us" data-label_1="Forecast for" data-label_2="Slidell, LA" data-theme="original" >Forecast for Slidell</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script></div>
+
+
+
+
+<div id="stock" class="tradingview-widget-container">
+  <div id="tradingview_d44f9"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/CURRENCYCOM-US100/" rel="noopener" target="_blank"><span class="blue-text">US100 Quotes</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.MediumWidget(
+  {
+  "symbols": [
+    [
+      "CURRENCYCOM:US100|12M"
+    ]
+  ],
+  "chartOnly": false,
+  "width": "617",
+  "height": "285",
+  "locale": "en",
+  "colorTheme": "light",
+  "gridLineColor": "#F0F3FA",
+  "trendLineColor": "#2196F3",
+  "fontColor": "#787B86",
+  "underLineColor": "#E3F2FD",
+  "isTransparent": false,
+  "autosize": false,
+  "container_id": "tradingview_d44f9"
+}
+  );
+  </script>
+</div>
+
+<div id="news">
+<!-- start sw-rss-feed code --> 
+<script type="text/javascript"> 
+<!-- 
+rssfeed_url = new Array(); 
+rssfeed_url[0]="https://news.google.com/news/rss";  
+rssfeed_frame_width="660"; 
+rssfeed_frame_height="253"; 
+rssfeed_scroll="on"; 
+rssfeed_scroll_step="6"; 
+rssfeed_scroll_bar="off"; 
+rssfeed_target="_blank"; 
+rssfeed_font_size="18"; 
+rssfeed_font_face=""; 
+rssfeed_border="on"; 
+rssfeed_css_url=""; 
+rssfeed_title="on"; 
+rssfeed_title_name=""; 
+rssfeed_title_bgcolor="#3366ff"; 
+rssfeed_title_color="#fff"; 
+rssfeed_title_bgimage=""; 
+rssfeed_footer="off"; 
+rssfeed_footer_name="rss feed"; 
+rssfeed_footer_bgcolor="#fff"; 
+rssfeed_footer_color="#333"; 
+rssfeed_footer_bgimage=""; 
+rssfeed_item_title_length="80"; 
+rssfeed_item_title_color="#666"; 
+rssfeed_item_bgcolor="#fff"; 
+rssfeed_item_bgimage=""; 
+rssfeed_item_border_bottom="on"; 
+rssfeed_item_source_icon="off"; 
+rssfeed_item_date="off"; 
+rssfeed_item_description="on"; 
+rssfeed_item_description_length="120"; 
+rssfeed_item_description_color="#666"; 
+rssfeed_item_description_link_color="#333"; 
+rssfeed_item_description_tag="off"; 
+rssfeed_no_items="0"; 
+rssfeed_cache = "cb9fe38552193295e6b1beddcb4f18b2"; 
+//--> 
+</script> 
+<script type="text/javascript" src="https://feed.surfing-waves.com/js/rss-feed.js"></script> 
+
+
+</div>
+
+</body>
+
+</html>
