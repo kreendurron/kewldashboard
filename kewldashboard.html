@@ -1,81 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!-- TODO: Be Sure to Animate divs in/out before/after hard refresh-->
 <meta http-equiv="refresh" content="300">
-<style> 
-body {
-  background-image: url("https://cdn.wallpapersafari.com/36/42/T0Wet7.jpg");
-}
-</style>
-<style>
-  #map {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    margin-right: 45px;
-  }
-</style>
-<style>
-  #radar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    margin-left: 45px;
-  }
-</style>
-<style>
-  #time {
-    position: fixed;
-    top: 19%;
-    left: 32%;
-    
-  }
-</style>
-<style>
-  #cast {
-    position: fixed;
-    width: 100%;
-    margin-top: 0px;
-    margin-left: -24px;
-  
-  }
-</style>
-<style>
-  #stock {
-    position: fixed;
-    width: 100%;
-    margin-top: 99px;
-    margin-left: 1250px; 
-  }
-</style>
-<style>
-  #news {
-    position: fixed;
-    width: 100%;
-    margin-top: 99px;
-    margin-left: 37px; 
-  }
-</style>
+<!-- DONE!!: Moved all inline css to /css/main.css -->
+<link rel="stylesheet" href="/css/main.css">
 </head>
+
 <body>
 
-<div id="time"><iframe src="https://freesecure.timeanddate.com/clock/i7pkya6r/n178/fs48/fcfff/tct/pct/ftb/tt0/tb4" frameborder="0" width="739" height="112" allowTransparency="true"></iframe>
+<div id="time">
+  <iframe src="https://freesecure.timeanddate.com/clock/i7pkya6r/n178/fs48/fcfff/tct/pct/ftb/tt0/tb4" frameborder="0" width="739" height="112" allowTransparency="true"></iframe>
+</div>
 
- </div>
+<div id="radar">
+  <iframe width="912" height="604" src="https://embed.windy.com/embed2.html?lat=29.841&lon=-89.824&detailLat=30.269&detailLon=-89.729&width=912&height=604&zoom=8&level=surface&overlay=rain&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=true&metricWind=mph&metricTemp=%C2%B0F&radarRange=-1" frameborder="0"></iframe>
+</div>
 
-
-
-<div id="radar"><iframe width="912" height="604" src="https://embed.windy.com/embed2.html?lat=29.841&lon=-89.824&detailLat=30.269&detailLon=-89.729&width=912&height=604&zoom=8&level=surface&overlay=rain&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=true&metricWind=mph&metricTemp=%C2%B0F&radarRange=-1" frameborder="0"></iframe></div>
-
-<div id="map"><iframe src="https://embed.waze.com/iframe?zoom=10&lat=30.2577&lon=-90.0000&ct=livemap" width="912" height="600"></iframe></div>
-
+<div id="map">
+  <iframe src="https://embed.waze.com/iframe?zoom=10&lat=30.2577&lon=-90.0000&ct=livemap" width="912" height="600"></iframe>
+</div>
+<!-- TODO: Move all inline js to /js/app.js -->
 <div id="cast"><a class="weatherwidget-io" href="https://forecast7.com/en/30d28n89d78/slidell/?unit=us" data-label_1="Forecast for" data-label_2="Slidell, LA" data-theme="original" >Forecast for Slidell</a>
 <script>
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-</script></div>
-
-
-
+</script>
+</div>
 
 <div id="stock" class="tradingview-widget-container">
   <div id="tradingview_d44f9"></div>
@@ -107,7 +57,8 @@ body {
 </div>
 
 <div id="news">
-<!-- start sw-rss-feed code --> 
+<!-- start sw-rss-feed code -->
+<!-- RSS Feed could use some work... not sure what just yet -->
 <script type="text/javascript"> 
 <!-- 
 rssfeed_url = new Array(); 
